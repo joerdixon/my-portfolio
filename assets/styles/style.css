@@ -36,6 +36,10 @@ nav {
     margin-left: auto;
     width: 100%;
     height: 7vh;
+    /* Sticks to the top on scroll down */
+    position: sticky;
+    top: 0;
+    background-color: var(--bg-color);
     /* Flex Settings */
     display: flex;
     align-items: center;
@@ -101,6 +105,10 @@ h1 {
 /**************** CLASS STYLING ****************/
 
 /* MAIN */
+
+.main {
+    
+}
 
 /* HERO CARD */
 
