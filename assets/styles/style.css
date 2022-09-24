@@ -1,32 +1,72 @@
 
 :root {
---white: #fff;
---black: #000;
---dark-grey: #444;
---accent: pink;
-/* COLORS: 
-white
-black
-navy of some kind or maybe a poppier color */
+/* COLORS */
+--bg-color: #fff;
+--text-color: #000;
+--alt-text-color: #bbb;
+--accent-color: pink;
 
-/* FONTS:
-apple one would be cool
-probably a lucida console for something */
+/* FONTS */
+--clean: 'Inter Tight', sans-serif;
 }
 
 /* GENRAL STYLING */
 
 body {
-background-color: var(--dark-grey);
+background-color: var(--bg-color);
+color: green;
+padding: 10vh;
 }
 
 /* ELEMENT STYLING */
 
-/* HEADER */
+/* NAV BAR */
 
-header {
-    width: 100%;
-    height:
+nav {
+    margin-left: auto;
+    width: 40%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Flex container for nav links */
+
+nav ul {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    font-family: sans-serif;
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+/* HERO CARD */
+
+.hero-card {
+    margin: 0 auto;
+    height: 30vh;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--clean);
+    font-size: 4rem;
+    padding: 20vh;
+    padding-bottom: 5vh;
+    color: var(--text-color);
+}
+
+.hero-card p {
+    font-family: var(--clean);
+    font-size: 2rem;
+    color: var(--text-color);
 }
 
 /* MAIN */
