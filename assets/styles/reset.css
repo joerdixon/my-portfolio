@@ -29,3 +29,7 @@
     overflow-wrap: break-word;
   }
 
+  li, ul {
+    list-style-type: none;
+  }
+

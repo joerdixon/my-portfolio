@@ -1,5 +1,9 @@
 
 :root {
+--white: #fff;
+--black: #000;
+--dark-grey: #444;
+--accent: pink;
 /* COLORS: 
 white
 black
@@ -13,12 +17,17 @@ probably a lucida console for something */
 /* GENRAL STYLING */
 
 body {
-background: linear-gradient(#333, #182655);
+background-color: var(--dark-grey);
 }
 
 /* ELEMENT STYLING */
 
 /* HEADER */
+
+header {
+    width: 100%;
+    height:
+}
 
 /* MAIN */
 
