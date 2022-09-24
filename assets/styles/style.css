@@ -44,6 +44,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
     /* JD TAG */
@@ -196,13 +197,14 @@ h1 {
     width: 90%;
     height: 100vh;
     margin: 0 auto;
+    margin-top: 40vh;
     /* Flex Settings */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
     /* Deco */
-    background-color: navy;
-    color: white;
+    background-color: var(--bg-color);
 }
 
 .work h2 {
@@ -210,13 +212,18 @@ h1 {
     width: 30%;
     margin: 0 auto;
     text-align: center;
+    /* Deco */
+    font-family: var(--clean-font);
+    color: var(--text-color);
+    font-size: var(--section-head);
 }
 
 .card-container {
     /* Layout */
-    width: 40%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
+    margin-top: 5vh;
     /* Flex Settings */
     display: flex;
     flex-wrap: wrap;
@@ -227,9 +234,9 @@ h1 {
 /* Individual Portfolio Card */
 
 .card {
-    height: 20vh;
-    width: 20vw;
-    background-color: aqua;
+    height: 30%;
+    width: 40%;
+    background-image: url(./assets/images/under-construction.jpg);
 }
             
 /* FOOTER */
