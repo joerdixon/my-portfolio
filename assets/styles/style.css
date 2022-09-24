@@ -6,6 +6,7 @@
 --alt-text-color: #bbb;
 --accent-color: pink;
 --gradient: linear-gradient(90deg, pink, #c0ffee);
+
 /* FONTS */
 --clean: 'Inter Tight', sans-serif;
 }
@@ -14,20 +15,22 @@
 
 body {
 background-color: var(--bg-color);
-/* Whitespace border */
+/* White(black)space border */
 padding: 5% 8%;
 /* Preventing squishing */
 min-width: 600px;
 }
 
-/* ELEMENT STYLING */
+/***************** ELEMENT STYLING *****************/
 
 /* NAV BAR */
 
 nav {
+    /* Layout */
     margin-left: auto;
     width: 100%;
     height: 7vh;
+    /* Flex Settings */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,44 +38,38 @@ nav {
 
     /* JD TAG */
 
-    nav p {
-        width: 10%;
-        text-align: center;
-        color: beige;
-        font-family: sans-serif;
-        font-weight: 750;
-    }
+nav p {
+    /* Layout */
+    width: 10%;
+    text-align: center;
+    /* Deco */
+    color: beige;
+    font-family: sans-serif;
+    font-weight: 750;
+}
 
     /* Flex container for nav links */
 
-    nav ul {
-        /* Proportions */
-        height: 100%;
-        width: 25%;
-        /* Flex Settings */
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
+nav ul {
+     /* Proportions */
+     height: 100%;
+     width: 25%;
+     /* Flex Settings */
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
-    nav a {
-        /* Deco */
-        font-family: var(--clean);
-        text-decoration: none;
-        color: var(--text-color);
-        font-size: .8rem;
-        font-weight: 100;
-    }
+nav a {
+    /* Deco */
+    font-family: var(--clean);
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: .8rem;
+    font-weight: 100;
+}
 
 /* HERO CARD */
-
-.hero-card {
-    margin: 0 auto;
-    margin-top: 12%;
-    text-align: center;
-    /* Positions the card in the middle of the screen */
-
-}
 
 h1 {
     /* Deco */
@@ -89,6 +86,24 @@ h1 {
     color: var(--gradient); */
     /* Making sure nothing gets squished */
     min-width: 225px;
+}
+
+/* MAIN */
+
+/* FOOTER */
+
+/**************** CLASS STYLING ****************/
+
+/* MAIN */
+
+/* HERO CARD */
+
+.hero-card {
+    margin: 0 auto;
+    margin-top: 12%;
+    text-align: center;
+    /* Positions the card in the middle of the screen */
+
 }
 
 .hero-card p {
@@ -110,27 +125,39 @@ h1 {
     min-width: 236px;
 }
 
-/* MAIN */
+/* ABOUT ME SECTION */
 
-/* FOOTER */
+.about-me {
+    /* Layout */
+    width: 90%;
+    margin: 40vh auto;
+    text-align: center;
+    /* margin-top: 40vh; */
+    /* Flex Settings */
+    display: flex;
+    justify-content: space-between;
+    /* Deco */
+    color: white;
+}
 
-/* CLASS STYLING */
+.about-me img {
+    width: 40%;
+    height: auto;
+}
 
-/* HEADER */
-
-/* MAIN */
+.bio {
+    width: 40%;
+}
             
 /* FOOTER */
 
-/* ID STYLING */
-
-/* HEADER */
+/***************** ID STYLING *****************/
 
 /* MAIN */
 
 /* FOOTER */
 
-/* MEDIA QUERIES */
+/***************** MEDIA QUERIES *****************/
 
 /* TABLET */
 
