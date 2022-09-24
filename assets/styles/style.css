@@ -5,11 +5,17 @@
 --text-color: #fff;
 --alt-text-color: #bbb;
 --accent-color: pink;
---gradient: linear-gradient(90deg, pink, #c0ffee);
+--gradient: linear-gradient(90deg, pink,blue);
 
 /* FONTS */
---clean: 'Inter Tight', sans-serif;
+--clean-font: 'Inter Tight', sans-serif;
+
+/* SIZES */
+--section-head: 2rem;
+--paragraph: .8rem;
 }
+
+
 
 /* GENRAL STYLING */
 
@@ -62,10 +68,10 @@ nav ul {
 
 nav a {
     /* Deco */
-    font-family: var(--clean);
+    font-family: var(--clean-font);
     text-decoration: none;
     color: var(--text-color);
-    font-size: .8rem;
+    font-size: var(--paragraph);
     font-weight: 100;
 }
 
@@ -73,8 +79,8 @@ nav a {
 
 h1 {
     /* Deco */
-    font-family: var(--clean);
-    font-size: 4rem;
+    font-family: var(--clean-font);
+    font-size: 4rem; 
     margin: 0 auto;
     color: var(--text-color);
     /* Gradient Text */
@@ -108,8 +114,8 @@ h1 {
 
 .hero-card p {
     /* Deco */
-    font-family: var(--clean);
-    font-size: 2rem;
+    font-family: var(--clean-font);
+    font-size: var(--section-head);
     color: var(--text-color);
     /* Layout */
     margin: 0 auto;
@@ -130,9 +136,9 @@ h1 {
 .about-me {
     /* Layout */
     width: 90%;
-    margin: 40vh auto;
+    margin: 0 auto;
     text-align: center;
-    /* margin-top: 40vh; */
+    margin-top: 40vh;
     /* Flex Settings */
     display: flex;
     justify-content: space-between;
@@ -141,12 +147,34 @@ h1 {
 }
 
 .about-me img {
-    width: 40%;
+    /* Layout */
+    width: 30%;
     height: auto;
+    margin: 0 auto;
+    /* Deco */
+    border-radius: 100%;
+    border: 3px solid pink;
 }
 
 .bio {
+    /* Layout */
+    margin: 0 auto;
     width: 40%;
+    /* Flex Settings */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bio h2 {
+    /* Deco */
+    font-family: var(--clean-font);
+    font-size: var(--section-head);
+}
+
+.bio p {
+    font-family: var(--clean-font);
+    font-size: var(--paragraph);
 }
             
 /* FOOTER */
@@ -169,6 +197,10 @@ h1 {
     nav ul {
         flex-direction: column;
     }
+    .about-me {
+        display: block;
+    }
+
 }
 
 /* SMARTPHONE */
