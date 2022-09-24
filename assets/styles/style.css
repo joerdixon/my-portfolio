@@ -98,6 +98,10 @@ h1 {
     min-width: 225px;
 }
 
+/* section {
+    width: 90%;
+} */
+
 /* MAIN */
 
 /* FOOTER */
@@ -107,7 +111,7 @@ h1 {
 /* MAIN */
 
 .main {
-    
+    /* Make a flex container to space out sections vertically. */
 }
 
 /* HERO CARD */
@@ -183,6 +187,49 @@ h1 {
 .bio p {
     font-family: var(--clean-font);
     font-size: var(--paragraph);
+}
+
+/* WORK SECTION / PORTFOLIO SHOWCASE */
+
+.work {
+    /* Layout */
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    /* Flex Settings */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* Deco */
+    background-color: navy;
+    color: white;
+}
+
+.work h2 {
+    /* Layout */
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-container {
+    /* Layout */
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    /* Flex Settings */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around
+}
+
+/* Individual Portfolio Card */
+
+.card {
+    height: 20vh;
+    width: 20vw;
+    background-color: aqua;
 }
             
 /* FOOTER */
