@@ -1,8 +1,8 @@
 
 :root {
 /* COLORS */
---bg-color: #fff;
---text-color: #000;
+--bg-color: #000;
+--text-color: #fff;
 --alt-text-color: #bbb;
 --accent-color: pink;
 --gradient: linear-gradient(90deg, navy, pink);
@@ -55,10 +55,11 @@ nav {
 
     nav a {
         /* Deco */
-        font-family: sans-serif;
+        font-family: var(--clean);
         text-decoration: none;
         color: var(--text-color);
         font-size: .8rem;
+        font-weight: 100;
     }
 
 /* HERO CARD */
@@ -76,21 +77,29 @@ h1 {
     font-family: var(--clean);
     font-size: 4rem;
     margin: 0 auto;
+    color: var(--text-color);
     /* Gradient Text */
-    max-width: 285px;
+    /* max-width: 285px;
     background: var(--gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: var(--gradient);
+    color: var(--gradient); */
     /* Making sure nothing gets squished */
     min-width: 225px;
 }
 
 .hero-card p {
-    min-width: 400px;
+    min-width: 236px;
     font-family: var(--clean);
     font-size: 2rem;
     color: var(--text-color);
+    margin: 0 auto;
+    /* Gradient Text */
+    max-width: 236px;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: var(--gradient);
 }
 
 /* MAIN */
