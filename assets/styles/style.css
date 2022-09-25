@@ -28,6 +28,10 @@ padding: 5% 8%;
 min-width: 600px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /***************** ELEMENT STYLING *****************/
 
 /* NAV BAR */
@@ -176,9 +180,21 @@ footer {
     height: auto;
     margin: 0 auto;
     /* Deco */
+    /* border-image: linear-gradient(#f6b73c, #4d9f0c) 10; */
     border-radius: 100%;
+    /* border-image: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c)
+        20; */
     /* TODO: Add border with rainbow effect. */
 }
+
+
 
 .bio {
     /* Layout */
@@ -250,12 +266,13 @@ footer {
 .primary {
     /* The largest card */
     /* TODO: Add more subtle emphasis on the top card. */
-    flex-basis: 800px;
+    flex-basis: 1000px;
     margin: 0 auto;
     width: 100%;
 }
 
 .card {
+    /* Layout */
     width: 38%;
     height: 30%;
 
@@ -266,6 +283,13 @@ footer {
 
     /* Deco */
     box-shadow: 1vh 1vw 10px black;
+    border-radius: 10px;
+
+    /* Transitions for hover effects */
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
+    transition-property: transform;
+    transition-duration: .2s;
 }
 
 /* WITHIN THE CARDS */
@@ -332,17 +356,26 @@ footer {
 /* Portfolio Cards Hover Highlight */
 
 .card:hover {
-    transform: translateY(-6px);
-    transition-timing-function: ease-in-out;
-    transition-property: transform;
-    transition-duration: 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px #aaa;
 }
 
-.card:hover {
-    box-shadow: 4px 4px 10px #333;
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-}
+
+/* About Me Image Hover Highlight attempt  */
+
+/* TODO: Try Again... */
+
+/* .about-me img::after {
+    content: "";
+    position: absolute;
+    inset: -10em;
+    background: linear-gradient(to bottom right,
+        rgb(0, 255, 81), rgb(255, 213, 0));
+    filter: blur(2.5em);
+    z-index: -1;
+} */
+
+
 
 /* ANIMATIONS */
 
