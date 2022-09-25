@@ -110,6 +110,21 @@ h1 {
 
 /* FOOTER */
 
+footer {
+    /* Layout */
+    height: 10vh;
+    width: 30%;
+    margin: 0 auto;
+    /* Deco */
+    background-color: #000;
+    font-family: var(--clean-font);
+    color: var(--text-color);
+    /* Flex Settings */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 /**************** CLASS STYLING ****************/
 
 /* MAIN */
@@ -234,6 +249,9 @@ h1 {
     align-items: center;
 }
 
+.card-container a {
+}
+
 /* Individual Portfolio Card */
 
 /* TODO: Add language badges underneath to indicate languages used. */
@@ -242,6 +260,8 @@ h1 {
     /* The largest card */
     /* TODO: Add more subtle emphasis on the top card. */
     flex-basis: 800px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .card {
@@ -307,7 +327,11 @@ h1 {
     /* Layout */
     width: 50%;
     margin: 0 auto;
-    height: 20vh;
+    height: 15vh;
+    /* Flex Settings */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /* FOOTER */
@@ -336,6 +360,13 @@ h1 {
     .card {
         width: 80%;
     }
-}
 
+    /* WORK SECTION */
+
+    .card-container {
+        height: 70vh;
+    }
+
+    /* CONTACT SECTION */
+}
 /* Smartphone Size */
