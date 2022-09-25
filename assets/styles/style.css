@@ -12,6 +12,7 @@
 
 /* SIZES */
 --section-head: 2rem;
+--sub-head: 1.6rem;
 --paragraph: .8rem;
 }
 
@@ -30,6 +31,8 @@ min-width: 600px;
 /***************** ELEMENT STYLING *****************/
 
 /* NAV BAR */
+
+/* TODO: Fix nav bar collapse when it hits a section  */
 
 nav {
     /* Layout */
@@ -231,8 +234,11 @@ h1 {
 
 /* Individual Portfolio Card */
 
+/* TODO: Add language badges underneath to indicate languages used. */
+
 .primary {
-    /* Trying to make this one bigger by a factor of 2. */
+    /* The largest card */
+    /* TODO: Add more subtle emphasis on the top card. */
     flex-basis: 800px;
 }
 
@@ -272,7 +278,8 @@ h1 {
 .proj-description h3 {
     /* Deco */
     font-family: var(--clean-font);
-    color: var(--alt-text-color)
+    color: var(--alt-text-color);
+    font-size: var(--sub-head);
 }
 
 .proj-description p {
@@ -291,30 +298,22 @@ h1 {
 
 /***************** MEDIA QUERIES *****************/
 
-/* Medium */
+/* TODO: Make nav bar fully responsive. Hamburger menu? */
 
+/* Medium Size */
 @media screen and (max-width: 1200px) {
-    /* NAV */
-    /* nav a {
-        font-size: .7rem;
-    }
-    nav ul {
-        flex-direction: column;
-    } */
-    /* MAIN */
-    /* ABOUT ME */
+    /* ABOUT SECTION */
     .about-me {
         display: block;
     }
-    /* WORK */
-    /* .card {
-        width: 50%;
-    } */
-
 }
 
-/* Small */
+/* Tablet Size */
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 876px) {
+    .card {
+        width: 80%;
+    }
+}
 
-} */
+/* Smartphone Size */
