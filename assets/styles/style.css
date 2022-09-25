@@ -3,7 +3,7 @@
 /* COLORS */
 --bg-color: #111;
 --text-color: #fff;
---alt-text-color: #bbb;
+--alt-text-color: #ccc;
 --accent-color: pink;
 --gradient: linear-gradient(90deg, pink,blue);
 
@@ -159,7 +159,6 @@ h1 {
     display: flex;
     justify-content: space-between;
     /* Deco */
-    color: white;
 }
 
 .about-me img {
@@ -186,11 +185,14 @@ h1 {
     /* Deco */
     font-family: var(--clean-font);
     font-size: var(--section-head);
+    color: var(--text-color);
 }
 
 .bio p {
+    /* Deco */
     font-family: var(--clean-font);
     font-size: var(--paragraph);
+    color: var(--alt-text-color)
 }
 
 /* WORK SECTION / PORTFOLIO SHOWCASE */
@@ -278,14 +280,34 @@ h1 {
 .proj-description h3 {
     /* Deco */
     font-family: var(--clean-font);
-    color: var(--alt-text-color);
+    color: var(--text-color);
     font-size: var(--sub-head);
 }
 
 .proj-description p {
+    /* Deco */
     font-family: var(--clean-font);
     font-size: var(--paragraph);
+    color: var(--alt-text-color);
+}
+
+/* CONTACT */
+
+.contact h2 {
+    /* Layout */
+    text-align: center;
+    /* Deco */
+    font-size: var(--section-head);
+    font-family: var(--clean-font);
     color: var(--text-color);
+    margin-top: 20vh;
+}
+
+.contact-icons {
+    /* Layout */
+    width: 50%;
+    margin: 0 auto;
+    height: 20vh;
 }
 
 /* FOOTER */
