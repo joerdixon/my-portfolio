@@ -238,21 +238,48 @@ h1 {
 
 .card {
     width: 38%;
-    height: 25%;
+    height: 30%;
 
     /* Flex Settings */
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     /* Deco */
-    background-color: grey;
 }
 
 /* WITHIN THE CARDS */
 
 .card img {
-    height: 50%;
-    width: 25%;
+    height: 17vh;
+    width: 17vh;
 }
-            
+
+.proj-description {
+    /* Layout */
+    width: 50%;
+    height: 90%;
+    /* Flex Settings */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+/* WITHIN THE TEXT SECTION OF THE CARDS */
+
+.proj-description h3 {
+    /* Deco */
+    font-family: var(--clean-font);
+    color: var(--alt-text-color)
+}
+
+.proj-description p {
+    font-family: var(--clean-font);
+    font-size: var(--paragraph);
+    color: var(--text-color);
+}
+
 /* FOOTER */
 
 /***************** ID STYLING *****************/
