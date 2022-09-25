@@ -370,15 +370,17 @@ footer {
         opacity: 0%;
       }
 
-    /* 50% {
-        opacity: 10%;
+    35% {
+        opacity: 0%;
     }
-     */
+
     100% {
         transform: translateY(0%);
         opacity: 100%;
       }
 }
+
+/* TODO: Add animation for name card sub header. wEb DeVeLoPeR. */
 
 /***************** MEDIA QUERIES *****************/
 
