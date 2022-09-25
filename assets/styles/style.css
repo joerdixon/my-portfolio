@@ -1,7 +1,7 @@
 
 :root {
 /* COLORS */
---bg-color: #111;
+--bg-color: #222;
 --text-color: #fff;
 --alt-text-color: #ccc;
 --accent-color: pink;
@@ -16,19 +16,21 @@
 --paragraph: .8rem;
 }
 
-
-
 /* GENRAL STYLING */
+
 
 body {
 background: var(--bg-color);
+height: 100%;
 /* White(black)space border */
 padding: 5% 8%;
 /* Preventing squishing */
 min-width: 600px;
 }
 
+
 a {
+    /* As it should be */
     text-decoration: none;
 }
 
@@ -54,8 +56,7 @@ nav {
     z-index: 2;
 }
 
-    /* JD TAG */
-
+/* JD TAG IN NAV BAR */
 nav p {
     /* Layout */
     width: 10%;
@@ -65,9 +66,8 @@ nav p {
     font-family: sans-serif;
     font-weight: 750;
 }
-
-    /* Flex container for nav links */
-
+    
+/* Flex container for nav links */
 nav ul {
      /* Proportions */
      height: 100%;
@@ -90,27 +90,21 @@ nav a {
 /* HERO CARD */
 
 h1 {
+    /* Layout */
+    margin: 0 auto;
     /* Deco */
     font-family: var(--clean-font);
     font-size: 4rem; 
-    margin: 0 auto;
     color: var(--text-color);
-    /* Gradient Text */
-    /* max-width: 285px;
-    background: var(--gradient);
-    -webkit-background-clip: text;
-     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: var(--gradient); */
     /* Making sure nothing gets squished */
     min-width: 225px;
+    /* Animation that brings it into view */
+    animation-name: nameload;
+    animation-duration: 5s;
+    animation-direction: forward;
+    /* animation-delay: .5s; */
+
 }
-
-/* section {
-    width: 90%;
-} */
-
-/* MAIN */
 
 /* FOOTER */
 
@@ -180,21 +174,9 @@ footer {
     height: auto;
     margin: 0 auto;
     /* Deco */
-    /* border-image: linear-gradient(#f6b73c, #4d9f0c) 10; */
     border-radius: 100%;
-    /* border-image: conic-gradient(
-        #fd004c,
-        #fe9000,
-        #fff020,
-        #3edf4b,
-        #3363ff,
-        #b102b7,
-        #fd004c)
-        20; */
     /* TODO: Add border with rainbow effect. */
 }
-
-
 
 .bio {
     /* Layout */
@@ -228,11 +210,6 @@ footer {
     height: 100vh;
     margin: 0 auto;
     margin-top: 40vh;
-    /* Flex Settings */
-    /* display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column; */
     /* Deco */
     background-color: var(--bg-color);
 }
@@ -241,6 +218,7 @@ footer {
     /* Layout */
     width: auto;
     margin: 0 auto;
+    margin-bottom: 5vh;
     text-align: center;
     /* Deco */
     font-family: var(--clean-font);
@@ -263,13 +241,7 @@ footer {
 
 /* TODO: Add language badges underneath to indicate languages used. */
 
-.primary {
-    /* The largest card */
-    /* TODO: Add more subtle emphasis on the top card. */
-    flex-basis: 1000px;
-    margin: 0 auto;
-    width: 100%;
-}
+
 
 .card {
     /* Layout */
@@ -292,11 +264,31 @@ footer {
     transition-duration: .2s;
 }
 
+.primary {
+    /* The largest card */
+    /* TODO: Add more subtle emphasis on the top card. */
+    flex-basis: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    /* Deco */
+}
+
+.primary div h3 {
+    font-weight: 900;
+    color: white;
+}
+
 /* WITHIN THE CARDS */
 
 .card img {
-    height: 17vh;
-    width: 17vh;
+    /* Size of icons */
+    height: 14vh;
+    width: 14vh;
+    /* Transition for hover effects */
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
+    transition-property: transform;
+    transition-duration: .2s;
 }
 
 .proj-description {
@@ -349,42 +341,43 @@ footer {
     align-items: center;
 }
 
-/***************** ID STYLING *****************/
-
 /***************** INTERACTIVITY *****************/
 
-/* Portfolio Cards Hover Highlight */
+/* Portfolio Cards Hover Effects */
+
+/* Raises and highlights the card */
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     box-shadow: 0px 0px 20px #aaa;
 }
 
+/* Increases the size of the icon. */
+
+.card:hover img {
+    transform: scale(1.1);
+}
 
 /* About Me Image Hover Highlight attempt  */
 
 /* TODO: Try Again... */
 
-/* .about-me img::after {
-    content: "";
-    position: absolute;
-    inset: -10em;
-    background: linear-gradient(to bottom right,
-        rgb(0, 255, 81), rgb(255, 213, 0));
-    filter: blur(2.5em);
-    z-index: -1;
-} */
+/****************** ANIMATIONS ******************/
 
-
-
-/* ANIMATIONS */
-
-
-
+@keyframes nameload {
+    from {
+        transform: translateY(-100%);
+        opacity: 0%;
+      }
+    
+      to {
+        transform: translateY(0%);
+        opacity: 100%;
+      }
+}
 
 /***************** MEDIA QUERIES *****************/
 
-/* TODO: Make nav bar fully responsive. Hamburger menu? */
 /* TODO: Adjust spacing between sections for smaller screens, too much space as is. */
 
 /* Medium Size */
@@ -414,14 +407,26 @@ footer {
 }
 
 /* Image starts to distort after this breakpoint so we set it to stack */
+/* Also resize the description so it fills more of the screen */
 @media screen and (max-width: 990px) {
     /* ABOUT ME */
     .about-me {
         display: block;
+        width: 100%;
+    }
+
+    .about-me img {
+        height: 40vh;
+        width: 40vh;
+    }
+
+    .bio {
+        margin-top: 10vh;
+        width: 80%;
     }
 }
 
-/* Tablet Size */
+/* Resize work cards for smaller screen size */
 
 @media screen and (max-width: 876px) {
     /* WORK SECTION */
@@ -432,5 +437,3 @@ footer {
         width: 80%;
     }
 }
-
-/* Smartphone Size (?)*/
