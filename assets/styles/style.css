@@ -127,12 +127,6 @@ footer {
 
 /**************** CLASS STYLING ****************/
 
-/* MAIN */
-
-.main {
-    /* Make a flex container to space out sections vertically. */
-}
-
 /* HERO CARD */
 
 .hero-card {
@@ -249,9 +243,6 @@ footer {
     align-items: center;
 }
 
-.card-container a {
-}
-
 /* Individual Portfolio Card */
 
 /* TODO: Add language badges underneath to indicate languages used. */
@@ -334,17 +325,34 @@ footer {
     align-items: center;
 }
 
-/* FOOTER */
-
 /***************** ID STYLING *****************/
 
-/* MAIN */
+/***************** INTERACTIVITY *****************/
 
-/* FOOTER */
+/* Portfolio Cards Hover Highlight */
+
+.card:hover {
+    transform: translateY(-6px);
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+    transition-duration: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 4px 4px 10px #333;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+/* ANIMATIONS */
+
+
+
 
 /***************** MEDIA QUERIES *****************/
 
 /* TODO: Make nav bar fully responsive. Hamburger menu? */
+/* TODO: Adjust spacing between sections for smaller screens, too much space as is. */
 
 /* Medium Size */
 @media screen and (max-width: 1200px) {
@@ -352,9 +360,29 @@ footer {
 
 }
 
-/* Image starts to distort after this breakpoint so we set it to stack */
+/* This is the breakpoint where the nav bar changes */
+@media screen and (max-width: 1075px) {
+    nav {
+        display: block;
+        height: 30vh;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    /* Gets rid of name on the left, I dont find it neccessary on this small of a screen. */
+    nav p {
+        display: none;
+    }
 
+    nav ul {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+/* Image starts to distort after this breakpoint so we set it to stack */
 @media screen and (max-width: 990px) {
+    /* ABOUT ME */
     .about-me {
         display: block;
     }
@@ -363,17 +391,13 @@ footer {
 /* Tablet Size */
 
 @media screen and (max-width: 876px) {
-
-    .card {
-        width: 80%;
-    }
-
     /* WORK SECTION */
-
     .card-container {
         height: 70vh;
     }
-
-    /* CONTACT SECTION */
+    .card {
+        width: 80%;
+    }
 }
-/* Smartphone Size */
+
+/* Smartphone Size (?)*/

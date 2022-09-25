@@ -1,0 +1,6 @@
+Things I Want To Implement:
+
+What I'm listening to live update sections (spotify api?)
+
+Language competency section - my stat block
+
