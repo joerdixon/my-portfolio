@@ -166,7 +166,7 @@ h1 {
     margin: 0 auto;
     /* Deco */
     border-radius: 100%;
-    border: 3px solid pink;
+    /* TODO: Add border with rainbow effect. */
 }
 
 .bio {
@@ -242,10 +242,11 @@ h1 {
 
     /* Flex Settings */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
     /* Deco */
+    box-shadow: 1vh 1vw 10px black;
 }
 
 /* WITHIN THE CARDS */
@@ -290,7 +291,7 @@ h1 {
 
 /***************** MEDIA QUERIES *****************/
 
-/* TABLET */
+/* Medium */
 
 @media screen and (max-width: 1200px) {
     /* NAV */
@@ -312,7 +313,7 @@ h1 {
 
 }
 
-/* SMARTPHONE */
+/* Small */
 
 /* @media screen and (max-width: 768px) {
 
