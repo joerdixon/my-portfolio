@@ -349,6 +349,12 @@ footer {
 /* Medium Size */
 @media screen and (max-width: 1200px) {
     /* ABOUT SECTION */
+
+}
+
+/* Image starts to distort after this breakpoint so we set it to stack */
+
+@media screen and (max-width: 990px) {
     .about-me {
         display: block;
     }
@@ -357,6 +363,7 @@ footer {
 /* Tablet Size */
 
 @media screen and (max-width: 876px) {
+
     .card {
         width: 80%;
     }
