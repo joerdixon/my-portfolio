@@ -100,9 +100,9 @@ h1 {
     min-width: 225px;
     /* Animation that brings it into view */
     animation-name: nameload;
-    animation-duration: 5s;
+    animation-duration: 2.5s;
     animation-direction: forward;
-    /* animation-delay: .5s; */
+    animation-timing-function: ease-out;
 
 }
 
@@ -365,12 +365,16 @@ footer {
 /****************** ANIMATIONS ******************/
 
 @keyframes nameload {
-    from {
-        transform: translateY(-100%);
+    0% {
+        transform: translateY(-110%);
         opacity: 0%;
       }
-    
-      to {
+
+    /* 50% {
+        opacity: 10%;
+    }
+     */
+    100% {
         transform: translateY(0%);
         opacity: 100%;
       }
