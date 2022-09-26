@@ -9,6 +9,7 @@
 
 /* FONTS */
 --clean-font: 'Inter Tight', sans-serif;
+--bulk-font: 'Roboto Slab', serif;
 
 /* TODO: Find another typeface for paragraph text, something thinner */
 
@@ -39,6 +40,9 @@ a {
 /* NAV BAR */
 
 /* TODO: Fix nav bar collapse when it hits a section  */
+
+/* TODO: Change navbar to go to a quad menu .   . looks better than stacked imo.
+                                            .   .*/
 
 nav {
     /* Layout */
@@ -251,7 +255,7 @@ footer {
 
 .bio p {
     /* Deco */
-    font-family: var(--clean-font);
+    font-family: var(--bulk-font);
     font-size: var(--paragraph);
     color: var(--alt-text-color)
 }
@@ -316,7 +320,7 @@ footer {
     transition-duration: .2s;
 
     /* Transitions for hover box shadow effects */
-    transition-property: box-shadow;
+    transition-property: box-shadow, transform;
     transition-duration: .2s;
     transition-timing-function: ease-out;
     transition-timing-function: ease-in;
@@ -332,7 +336,7 @@ footer {
 
 .primary div h3 {
     font-weight: 900;
-    color: white;
+    color: var(--text-color);
 }
 
 /* WITHIN THE CARDS */
@@ -370,7 +374,7 @@ footer {
 
 .proj-description p {
     /* Deco */
-    font-family: var(--clean-font);
+    font-family: var(--bulk-font);
     font-size: var(--paragraph);
     color: var(--alt-text-color);
 }
@@ -408,7 +412,7 @@ footer {
     border-radius: 100%;
     /* Transition Settings (Hover) */
     transition-timing-function: ease-in-out;
-    transition-property: transform;
+    transition-property: transform, background-color;
     transition-duration: .2s;
 }
 
@@ -422,7 +426,7 @@ footer {
 
 .card:hover {
     transform: translateY(-3%);
-    box-shadow: 0px 0px 20px #333;
+    box-shadow: 0px 0px 20px #666;
 }
 
 /* Increases the size of the icon. */
