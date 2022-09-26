@@ -10,6 +10,8 @@
 /* FONTS */
 --clean-font: 'Inter Tight', sans-serif;
 
+/* TODO: Find another typeface for paragraph text, something thinner */
+
 /* SIZES */
 --section-head: 2rem;
 --sub-head: 1.6rem;
@@ -333,7 +335,7 @@ footer {
     /* Size of icons */
     height: 14vh;
     width: 14vh;
-    /* Transition for hover effects */
+    /* Transition Settings (Hover) */
     transition-timing-function: ease-out;
     transition-timing-function: ease-in;
     transition-property: transform;
@@ -391,6 +393,19 @@ footer {
     align-items: center;
 }
 
+/* Getting contact icons formated for hover effect */
+.contact-icons img {
+    padding: 2vh;
+}
+
+.contact-icons a {
+    border-radius: 100%;
+    /* Transition Settings (Hover) */
+    transition-timing-function: ease-in-out;
+    transition-property: transform;
+    transition-duration: .2s;
+}
+
 /***************** INTERACTIVITY *****************/
 
 /* Portfolio Cards Hover Effects */
@@ -400,8 +415,8 @@ footer {
 /* TODO: WHY IS THE BOX SHADOW NOT FADING SMOOTHLY!!! */
 
 .card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0px 0px 20px #444;
+    transform: translateY(-3%);
+    box-shadow: 0px 0px 20px #333;
 }
 
 /* Increases the size of the icon. */
@@ -413,6 +428,35 @@ footer {
 /* About Me Image Hover Highlight attempt  */
 
 /* TODO: Try Again... */
+
+/* Contact Hover */
+
+/* TODO: Make individual contact icons hover and do a representative color
+Phone: Green
+Email: Red
+GitHub: Grey
+LinkedIn Blue */
+
+
+.callme:hover {
+    background-color: #0EB82A;
+    transform: translateY(-5%);
+}
+.emailme:hover {
+    background-color: #C83A2D;
+    transform: translateY(-5%);
+}
+.github:hover {
+    background-color: #444;
+    transform: translateY(-5%);
+}
+.linkedin:hover {
+    background-color: #0A66C2;
+    transform: translateY(-5%);
+}
+
+
+/* TODO: Add contact section hover effects */
 
 /****************** ANIMATIONS ******************/
 
