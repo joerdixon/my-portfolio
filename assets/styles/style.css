@@ -1,7 +1,7 @@
 
 :root {
 /* COLORS */
---bg-color: #222;
+--bg-color: #111;
 --text-color: #fff;
 --alt-text-color: #ccc;
 --accent-color: pink;
@@ -92,13 +92,13 @@ nav a {
 h1 {
     /* Layout */
     margin: 0 auto;
+    /* Making sure nothing gets squished */
+    min-width: 225px;
     /* Deco */
     font-family: var(--clean-font);
     font-size: 4rem; 
     color: var(--text-color);
-    /* Making sure nothing gets squished */
-    min-width: 225px;
-    /* Animation that brings it into view */
+    /* Animation Settings */
     animation-name: nameload;
     animation-duration: 2.5s;
     animation-direction: forward;
@@ -152,6 +152,14 @@ footer {
     color: var(--gradient);
     /* Anti Squish */
     min-width: 236px;
+    /* Animation Settings */
+    animation-name: subload;
+    animation-duration: 2.5s;
+    animation-direction: forward;
+    animation-timing-function: ease-out;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+
 }
 
 /* ABOUT ME SECTION */
@@ -349,7 +357,7 @@ footer {
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0px 0px 20px #aaa;
+    box-shadow: 0px 0px 20px #666;
 }
 
 /* Increases the size of the icon. */
@@ -363,6 +371,8 @@ footer {
 /* TODO: Try Again... */
 
 /****************** ANIMATIONS ******************/
+
+/* Name falls down on page load */
 
 @keyframes nameload {
     0% {
@@ -378,6 +388,20 @@ footer {
         transform: translateY(0%);
         opacity: 100%;
       }
+}
+
+/* Subheader Drop-in */
+
+@keyframes subload {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 100%;
+    }
 }
 
 /* TODO: Add animation for name card sub header. wEb DeVeLoPeR. */
