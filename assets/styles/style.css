@@ -309,11 +309,17 @@ footer {
     box-shadow: 1vh 1vw 10px black;
     border-radius: 10px;
 
-    /* Transitions for hover effects */
+    /* Transitions for hover movement effects */
     transition-timing-function: ease-out;
     transition-timing-function: ease-in;
     transition-property: transform;
     transition-duration: .2s;
+
+    /* Transitions for hover box shadow effects */
+    transition-property: box-shadow;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in;
 }
 
 .primary {
