@@ -5,3 +5,5 @@ What I'm listening to live update sections (spotify api?)
 Language competency section - my stat block
 
 Find some way to implement a cute little game.
+
+GAMES IM CURRENTLY PLAYING SECTION.
