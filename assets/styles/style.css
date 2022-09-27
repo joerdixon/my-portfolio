@@ -11,8 +11,6 @@
 --clean-font: 'Inter Tight', sans-serif;
 --bulk-font: 'Roboto Slab', serif;
 
-/* TODO: Find another typeface for paragraph text, something thinner */
-
 /* SIZES */
 --section-head: 2rem;
 --sub-head: 1.6rem;
@@ -303,6 +301,7 @@ footer {
     /* Layout */
     width: 38%;
     height: 30%;
+    margin: 4vh;
 
     /* Flex Settings */
     display: flex;
@@ -381,6 +380,8 @@ footer {
 
 /* CONTACT */
 
+/* TODO: Make everything in the contact section bigger, I like the proportions but it feels like a footer rather than a section. */
+
 .contact h2 {
     /* Layout */
     text-align: center;
@@ -388,7 +389,7 @@ footer {
     font-size: var(--section-head);
     font-family: var(--clean-font);
     color: var(--text-color);
-    margin-top: 20vh;
+    margin-top: 25vh;
 }
 
 .contact-icons {
@@ -418,11 +419,11 @@ footer {
 
 /***************** INTERACTIVITY *****************/
 
+/* TODO: Add navbar hover effects */
+
 /* Portfolio Cards Hover Effects */
 
 /* Raises and highlights the card */
-
-/* TODO: WHY IS THE BOX SHADOW NOT FADING SMOOTHLY!!! */
 
 .card:hover {
     transform: translateY(-3%);
@@ -435,18 +436,11 @@ footer {
     transform: scale(1.1);
 }
 
-/* About Me Image Hover Highlight attempt  */
+/* About Me Image Hover Highlight Effects attempt  */
 
 /* TODO: Try Again... */
 
 /* Contact Hover */
-
-/* TODO: Make individual contact icons hover and do a representative color
-Phone: Green
-Email: Red
-GitHub: Grey
-LinkedIn Blue */
-
 
 .callme:hover {
     background-color: #0EB82A;
@@ -576,5 +570,9 @@ LinkedIn Blue */
     }
     .card {
         width: 80%;
+    }
+    /* CONTACT SECTION */
+    .contact h2 {
+        margin-top: 60vh;
     }
 }
