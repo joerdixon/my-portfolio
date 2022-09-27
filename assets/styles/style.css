@@ -9,12 +9,12 @@
 
 /* FONTS */
 --clean-font: 'Inter Tight', sans-serif;
---bulk-font: 'Roboto Slab', serif;
+--bulk-font: 'Raleway', serif;
 
 /* SIZES */
 --section-head: 2rem;
 --sub-head: 1.6rem;
---paragraph: .8rem;
+--paragraph: 1rem;
 }
 
 /* GENRAL STYLING */
@@ -459,8 +459,6 @@ footer {
     transform: translateY(-5%);
 }
 
-
-/* TODO: Add contact section hover effects */
 
 /****************** ANIMATIONS ******************/
 
