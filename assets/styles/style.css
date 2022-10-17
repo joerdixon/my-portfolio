@@ -394,10 +394,10 @@ footer {
 
 .contact-icons {
     /* Layout */
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 3vh;
-    height: 15vh;
+    height: 40vh;
     /* Flex Settings */
     display: flex;
     justify-content: space-evenly;
@@ -406,6 +406,8 @@ footer {
 
 /* Getting contact icons formated for hover effect */
 .contact-icons img {
+    /* Layout */
+    width: 8vh;
     padding: 2vh;
 }
 
@@ -416,6 +418,12 @@ footer {
     transition-property: transform, background-color;
     transition-duration: .2s;
 }
+
+/* Theme Change Button
+#lightmode {
+    width: 10%;
+    
+} */
 
 /***************** INTERACTIVITY *****************/
 
